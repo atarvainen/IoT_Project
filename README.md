@@ -18,7 +18,18 @@ Raspberry Pi 3
 
 ### Virtual Machines
 
-Linux
+Nimi: it-relaamo.labranet.jamk.fi
+
+OS: Ubuntu Server 16.04
+
+Kuvaus: Palvelin tulee IOT-järjestelmän kurssia varten kulunvalvonnan 
+lokipalvelimeksi
+
+Admin-tunnarit: L4163@student.jamk.fi
+
+Voimassaolo: heti - 17.12.2018
+
+Ei toistaiseksi tarvetta päästä ulkoverkosta erikseen.
 
 ## Intitial plan of the gateways
 
