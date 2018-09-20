@@ -2,6 +2,11 @@
 
 ## Members: Antti Tarvainen, Hannu Oksman, Pekka Sivusuo, Antti Kettunen. Saku Tupala
 
+### Communication platforms
+
+Slack viestitykseen ja yhteydenottoihin
+GitHub materiaalin kokoamiseen, jakamiseen ja säilytykseen
+
 ## Kulunvalvontajärjestelmä
 
 Luokkaan raspi ja jokaiselle ryhmän jäsenelle Ruuvitag, jota käyttämällä he kirjautuvat sisälle ja ulos. Mitataan aikaa paljonko on tietyssä tilassa. Kerätään Ruuvitagilta kaikki data talteen.
