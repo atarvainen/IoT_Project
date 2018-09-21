@@ -44,9 +44,9 @@ HTTPS (REST, Visualisation)
 ## Ticketing System
 
 Trello?
+Shared Office 365 file?
+GitHub's issues?
 
 ## Expansions
 
-Security Alarm
-
-
+Security Alarm - new sensors? Camera, ir-sensor, microphone. 
