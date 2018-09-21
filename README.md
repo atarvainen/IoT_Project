@@ -4,12 +4,12 @@
 
 ### Communication platforms
 
-Slack viestitykseen ja yhteydenottoihin
-GitHub materiaalin kokoamiseen, jakamiseen ja säilytykseen
+Slack for communicating
+GitHub for source codes
 
-## Kulunvalvontajärjestelmä
+## Access Control / Monitoring System
 
-Luokkaan raspi ja jokaiselle ryhmän jäsenelle Ruuvitag, jota käyttämällä he kirjautuvat sisälle ja ulos. Mitataan aikaa paljonko on tietyssä tilassa. Kerätään Ruuvitagilta kaikki data talteen.
+Raspberry Pi as a controller for Ruuvitag sensors which are used to logging in. Raspberry Pi feeds Ruuvitags' data and logging data.
 
 ### Sensors
 
@@ -23,21 +23,30 @@ Raspberry Pi 3
 
 ### Virtual Machines
 
-Nimi: it-relaamo.labranet.jamk.fi
+Name: it-relaamo.labranet.jamk.fi
 
 OS: Ubuntu Server 16.04
 
-Kuvaus: Palvelin tulee IOT-järjestelmän kurssia varten kulunvalvonnan 
-lokipalvelimeksi
+Description: The server serves IoT-järjestelmän toteutus -courses access control -assignment.
 
-Admin-tunnarit: L4163@student.jamk.fi
+Email: L4163@student.jamk.fi
 
-Voimassaolo: heti - 17.12.2018
+Validity: now - 17.12.2018
 
-Ei toistaiseksi tarvetta päästä ulkoverkosta erikseen.
+For now we don't need access to the external network.
 
 ## Intitial plan of the gateways
 
 Bluetooth (Ruuvitag to Rasp)
 MQTT (Rasp to Virtual Machine)
 HTTPS (REST, Visualisation)
+
+## Ticketing System
+
+Trello?
+
+## Expansions
+
+Security Alarm
+
+
