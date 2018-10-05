@@ -1,0 +1,64 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema L4623_2
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema L4623_2
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `L4623_2` DEFAULT CHARACTER SET utf8 ;
+USE `L4623_2` ;
+
+-- -----------------------------------------------------
+-- Table `L4623_2`.`RuuviTag`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `L4623_2`.`RuuviTag` (
+  `RuuviTagId` BIGINT UNSIGNED NOT NULL,
+  `User` VARCHAR(45) NULL,
+  PRIMARY KEY (`RuuviTagId`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `L4623_2`.`Data`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `L4623_2`.`Data` (
+  `Count` SMALLINT(5) UNSIGNED NOT NULL,
+  `Temp` SMALLINT(5) NULL,
+  `Humidity` SMALLINT(5) UNSIGNED NULL,
+  `Pressure` SMALLINT(5) UNSIGNED NULL,
+  `Acceleration-X` SMALLINT(5) NULL,
+  `Acceleration-Y` SMALLINT(5) NULL,
+  `Acceleration-Z` SMALLINT(5) NULL,
+  `Power` SMALLINT(4) UNSIGNED NULL,
+  `Time` DATETIME NULL,
+  `RuuviTagId` BIGINT UNSIGNED NOT NULL,
+  PRIMARY KEY (`Count`),
+  INDEX `fk_Data_RuuviTag_idx` (`RuuviTagId` ASC),
+  CONSTRAINT `fk_Data_RuuviTag`
+    FOREIGN KEY (`RuuviTagId`)
+    REFERENCES `L4623_2`.`RuuviTag` (`RuuviTagId`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+USE `L4623_2`;
+
+DELIMITER $$
+USE `L4623_2`$$
+CREATE TRIGGER `datetime` BEFORE INSERT ON `Data` FOR EACH ROW
+BEGIN
+	SET NEW.Time = NOW();
+END$$
+
+
+DELIMITER ;
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
