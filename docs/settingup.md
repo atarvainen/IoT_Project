@@ -4,14 +4,14 @@
 
 ### Done
 
-* dist-upgrade
-* mosquitto mosquitto-clients
+* sudo apt-get dist-upgrade
+* sudo apt-get mosquitto mosquitto-clients
 
 
 ### Todo
 
 * LAMP done?
-* Java
+* Java?
 * Tomcat?
 
 ## Raspberry Pi
@@ -27,9 +27,13 @@
 * sudo pip install psutil 
 * sudo pip3 install psutil 
 * sudo pip3 install --upgrade setuptools 
-* pip3 install --user ruuvitag-sensor
+* sudo pip3 install --user ruuvitag-sensor
 * sudo pip3 install ptyprocess
 
 ### Todo
 
 * Else?
+
+## MQTT
+
+* Set up authentication https://medium.com/@eranda/setting-up-authentication-on-mosquitto-mqtt-broker-de5df2e29afc
