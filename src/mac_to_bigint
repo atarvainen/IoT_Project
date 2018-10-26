@@ -1,0 +1,36 @@
+1
+SELECT HEX(mac_addr) FROM `devices`;
+While saving,
+
+1
+INSERT INTO `devices` (mac_addr) VALUES (x'0123456789AB');
+If you prefer to make conversions in PHP,
+
+1
+2
+3
+4
+5
+6
+7
+function mac2int($mac) {
+    return base_convert($mac, 16, 10);
+}
+ 
+function int2mac($int) {
+    return base_convert($int, 10, 16);
+}
+You can use this function to make the address human readable
+
+1
+2
+3
+4
+5
+6
+function int2macaddress($int) {
+    $hex = base_convert($int, 10, 16);
+    while (strlen($hex) < 12)
+        $hex = '0'.$hex;
+    return strtoupper(implode(':', str_split($hex,2)));
+}
