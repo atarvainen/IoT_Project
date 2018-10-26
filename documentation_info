@@ -1,0 +1,13 @@
+In summary, the documentation should include:
+
+-Problem definition
+-Solution overview
+-Type of sensors and actuators that are being used
+-Type of code being used
+-Type of network connections used to communicate
+-Description of cloud services used and how they are used
+-Whether this is a sustainable business model
+-End to end logical diagram
+-Sequence diagram
+-Flowchart
+-Electric circuit diagram
