@@ -1,2 +1,7 @@
+Virtuaalikoneella:
 sudo /etc/init.d/listen_to_mqtt.sh status
 sudo /etc/init.d/listen_to_mqtt.sh start/stop
+
+raspilla:
+sudo /etc/init.d/mqtt.sh status
+sudo /etc/init.d/mqtt.sh start/stop
