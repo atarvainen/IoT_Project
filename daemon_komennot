@@ -1,0 +1,2 @@
+sudo /etc/init.d/listen_to_mqtt.sh status
+sudo /etc/init.d/listen_to_mqtt.sh start/stop
