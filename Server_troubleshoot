@@ -1,0 +1,15 @@
+Tässä muutamat vinkit ja tiedot palvelimesta jos jotain menee kuralle:
+
+Apachen (tai muunkin) statuksen näkee komennolla "sudo systemctl status apache2".
+Jos Apache on sammunut, se lähtee seuraavalla komennolla käyntiin "sudo systemctl start apache2".
+Syntaksiin kuuluu myös restart, stop jne.. Vaatii restartin jos muutoksia tehdään Apacheen.
+
+Lokitiedostot sijaitsevat polussa /var/log/(haluttu palvelu, syslogit yms jo tässä kansiossa)/
+
+Palomuuri toimii ufw:llä. UFW:n statuksen ja portit näkee komennolla "sudo ufw status".
+Alla linkki tärkeimpiin komentoihin esimerkkeineen:
+https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
+
+root ja administrator käyttäjien salasana on generoitu 100-merkkiseksi. Jos jostai syystä näitä kuitenin tarvitsee käyttää, 
+näiden käyttäjien salasanat voi nollata komennolla "sudo passwd (käyttäjänimi)". Vältetään näiden käyttöä kuitenkin viimeiseen asti, 
+se on hyvää tietoturvaa :)
