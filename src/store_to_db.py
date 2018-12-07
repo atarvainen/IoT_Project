@@ -23,7 +23,8 @@ def sensor_Data_Handler(Topic, jsonData):
         machex = ":".join(machex)
         storeToDB(accx,accy,accz,hum,power,pres,temp,mac)
 
-database = MySQLDatabase('iot', **{'password': '12345', 'charset': 'utf8', 'use_unicode': True, 'user': 'root'})
+# MySQL user with insert privileges only
+database = MySQLDatabase('iot', **{'password': 'RuuviIOT133', 'charset': 'utf8', 'use_unicode': True, 'user': 'mqtt'})
 
 class UnknownField(object):
     def __init__(self, *_, **__): pass
