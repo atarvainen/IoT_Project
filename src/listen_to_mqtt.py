@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import paho.mqtt.client as mqtt
 import json
-from BAstore import sensor_Data_Handler
+from store_to_db import sensor_Data_Handler
 # MQTT Settings
 MQTT_Username = "iotProject"
 MQTT_Password = "systemctlusage"
@@ -12,10 +12,10 @@ def on_message(mosq, obj, msg):
         # For details of "sensor_Data_Handler" function please refer "sensor_dat                                                      a_to_db.py"
         print("MQTT Data Received...")
         print("MQTT Topic: " + msg.topic)
-        encoded = json.loads(msg.payload)
-        print("encoded payload @ BAlisten:")
-        print(encoded)
-        sensor_Data_Handler(msg.topic, encoded)
+		# loads from json dump
+        encodedjson = json.loads(msg.payload)
+        print("Payload: " + encodedjson)
+        sensor_Data_Handler(msg.topic, encodedjson)
 
 # Subscribe to client on connect so we automatically resubscribe after reconnecting
 def on_connect(client, userdta, flags, rc):

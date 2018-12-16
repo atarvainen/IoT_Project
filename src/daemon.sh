@@ -12,8 +12,8 @@
 
 # Change the next 3 lines to suit where you install your script and what you want to call it
 DIR=/home
-DAEMON=$DIR/BAlisten.py
-DAEMON_NAME=BAlisten
+DAEMON=$DIR/listen_to_mqtt.py
+DAEMON_NAME=listentomqtt
 
 # Add any command line options for your daemon here
 DAEMON_OPTS=""
