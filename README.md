@@ -2,7 +2,7 @@
 
 For detailed information see .docx and .pptx. Python scripts are in /src. We did most of the work in RasPi and VM, so this repo doesn't have that many commits. A lot of the work went into configurations, reading documentation and problem-solving. For information about Laravel and React, which were not the focus of this project, see this [repo](https://github.com/atarvainen/reactIoTproject). 
 
-### Team Members: [Hannu Oksman](https://student.labranet.jamk.fi/~L2912/) ([GitHub]((https://github.com/szeretni)), [Antti Tarvainen](https://github.com/atarvainen), [Pekka Sivusuo](https://github.com/pekkaXsiv), [Antti Kettunen](https://github.com/A-haCodes), [Saku Tupala](https://github.com/SnakkeZz)
+### Team Members: [Hannu Oksman](https://student.labranet.jamk.fi/~L2912/) ([GitHub](https://github.com/szeretni)), [Antti Tarvainen](https://github.com/atarvainen), [Pekka Sivusuo](https://github.com/pekkaXsiv), [Antti Kettunen](https://github.com/A-haCodes), [Saku Tupala](https://github.com/SnakkeZz)
 
 ## Intitial plan
 
